@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="/home">Home</a>
+    <a href="/create">Create Users</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <% if(typeof message !="undefined" && message){ %>
+    <h2>
+      <%= message %>
+    </h2>
+    <% } %>
+
+
+      <table>
+        <% listUsers.forEach((item)=>{
+          %>
+          <tr>
+            <th>
+              <%= item.id %>
+            </th>
+            <th>
+              <%= item.name %>
+            </th>
+            <th>
+              <%= item.age %>
+            </th>
+          </tr>
+          <Button><a href="/edit/<%= item.id %>">Edit</a></Button>
+          <% })%>
+
+      </table>
+
+      <h3 class="kk">llllll</h3>
+</body>
+
+</html>
