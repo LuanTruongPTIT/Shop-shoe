@@ -52,9 +52,7 @@ const listenToAMQP = async () => {
     } catch (error) {
       return error
     }
-    // channel.sendToQueue(replyTo, Buffer.from('OK'), {
-    //   correlationId: correlationId,
-    // })
+
   }, { noAck: true });
 }
 const saveVoucherCoin = async (req, res) => {
