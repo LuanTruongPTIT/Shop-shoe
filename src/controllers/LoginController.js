@@ -10,22 +10,21 @@ const getLoginUser = async (req, res) => {
   const { username, pass } = req.body
   if (username && pass) {
     const resultAndError = await findByUserName(username)
-    console.log(resultAndError)
+
     if (resultAndError.err) {
       res.render('/Login.ej', { message: "Please check!" })
       return;
     }
     if (resultAndError) {
-
       try {
         const result = await bcrypt.compare(pass, resultAndError[0].password);
-
         if (result == true) {
           const user = { username: username }
           const token = jwt.sign({ user }, process.env.SECRET_KEY, { expiresIn: '1h' });
           // res.json(token)
           res.cookie('token', token)
-          console.log(token)
+          req.session.user = resultAndError;
+
           return res.redirect('/trang-chu');
         } else {
           return res.render('Login.ejs', { message: "User is not valid" });
@@ -35,7 +34,6 @@ const getLoginUser = async (req, res) => {
         res.render('Login.ejs', { message: "An error occurred while verifying your credentials" });
       }
     }
-
   } else {
     res.render('Login.ejs', { message: "Username or password is Failed " })
   }

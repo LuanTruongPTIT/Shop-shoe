@@ -7,14 +7,16 @@ require('dotenv').config();
 const configViewEngine = require('./config/viewEngine')
 const webRoutes = require('./routes/web')
 const webLogin = require('./routes/auth.route')
+const coin = require('./routes/coin')
 const getProduct = require('./routes/product')
 const connection = require('./config/database')
+const voucher = require('./routes/voucher.router')
 const session = require('express-session')
 
 app.use(session({
   secret: "nhom16",
   resave: false,// dat lai session cookie cho moi req
-  saveUninitialized: true,
+  saveUninitialized: false,
   cookie: {
     secure: false,
     maxAge: 24 * 60 * 60 * 1000 // 1 day
@@ -28,6 +30,8 @@ app.use(express.urlencoded({ extended: true }))
 app.use(webRoutes);
 app.use(webLogin)
 app.use(getProduct)
+app.use(coin)
+app.use(voucher)
 
 app.listen((port), () => {
   console.log(`Example app listening on port ${port}`)

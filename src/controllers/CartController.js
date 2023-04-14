@@ -1,0 +1,1 @@
+const MomoPayment = require('momo-payment-sdk');

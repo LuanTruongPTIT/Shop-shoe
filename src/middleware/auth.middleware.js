@@ -7,11 +7,13 @@ const loggedinToken = (req, res, next) => {
   }
 }
 const loggedin = (req, res, next) => {
-  if (req.session.loggedin) {
+  if (req.session.user) {
     // res.locals.user = req.session.user;
+    console.log("thanhcong")
     next();
   } else {
-    res.redirect('/login')
+    console.log("that bai")
+    return res.render('Login.ejs')
   }
 }
 const isAuth = (req, res, next) => {

@@ -1,9 +1,9 @@
 const { getProductByID } = require('../models/product.model')
 const getProductById = async (req, res) => {
   let iD = req.params.id;
-  console.log(iD)
+
   let [result] = await getProductByID(iD)
-  console.log(result)
+
   res.send(result)
 }
 const addToCart = (req, res) => {
@@ -14,7 +14,8 @@ const addToCart = (req, res) => {
   }
   const sessionCart = req.session.cart || [];
   const existingItem = sessionCart.find((item) => item.Magiay === Magiay && item.size === size && item.mausac === mausac)
-  // console.log(existingItem)
+
+
   if (existingItem) {
     existingItem.soluong += soluong;
     existingItem.gia = existingItem.soluong * gia
@@ -28,10 +29,9 @@ const addToCart = (req, res) => {
       size: size,
       soluong: soluong
     })
-
   }
   req.session.cart = sessionCart;
-  // console.log(req.session.cart)
+
   res.json(sessionCart)
 }
 const removeProduct = (req, res) => {
@@ -48,9 +48,16 @@ const removeProduct = (req, res) => {
 }
 const showCart = (req, res) => {
   const sessionCart = req.session.cart;
-  console.log(sessionCart)
+
   res.json(sessionCart)
 }
+const getProduct = (req, res) => {
+  const sessionCart = req.session.cart;
+  res.status(200).json(sessionCart)
+}
+const getViewCart = (req, res) => {
+  return res.render("view-cart.ejs")
+}
 module.exports = {
-  getProductById, addToCart, removeProduct, showCart
+  getProductById, addToCart, removeProduct, showCart, getProduct, getViewCart
 }

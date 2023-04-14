@@ -18,9 +18,8 @@ const createPostUser = async (req, res) => {
 const getUpdateUser = async (req, res) => {
   try {
     const userID = await getUserById(req.params.id);
-    console.log(userID.name);
-    if (userID.length <
-      0) {
+
+    if (userID.length < 0) {
       res.render('home.ejs', { message: "Not found data" })
       return;
     }
@@ -31,7 +30,6 @@ const getUpdateUser = async (req, res) => {
 }
 const getEditUser = (res, req) => {
   return res.redirect('/home')
-
 }
 const getTrangChu = async (req, res) => {
   let resultAllProduct = await getAllProduct();

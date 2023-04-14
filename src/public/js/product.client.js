@@ -11,6 +11,7 @@ form.addEventListener('submit', async (event) => {
   const selectElementSize = document.querySelector('.js-select-size').value;
   const selectElementColor = document.querySelector('.js-select-color').value;
   const quantity = parseInt(document.querySelector('.num-product').value);
+
   if (!productName || !priceProduct || !selectElementColor || !selectElementSize || !quantity) {
     let errorElement = document.querySelector('.error');
     errorElement.textContent = "Please check information!"
@@ -27,48 +28,11 @@ form.addEventListener('submit', async (event) => {
       soluong: quantity
     })
     console.log(response)
-    response.data.forEach(item => {
-      console.log(item)
-      const cartItems = document.querySelectorAll(`.header-cart-item[data-product-id="${item.Magiay}"][data-product-color="${item.mausac}"][data-product-size="${item.size}"]`)
-      console.log(cartItems)
-      if (cartItems.length !== 0) {
-        cartItems.forEach(cartItem => {
-          const color = cartItem.getAttribute('data-product-color');
-          const size = cartItem.getAttribute('data-product-size')
-          if (item.mausac === color && item.size === size) {
-            const content = cartItem.querySelector('.header-cart-item-name');
-            content.innerText = item.sanpham + "-" + " " + "size:" + " " + item.size + "-" + " " + "color:" + item.mausac + "-" + " " + "Quantity:" + " " + item.soluong;
-            const cost = cartItem.querySelector('.header-cart-item-info');
-            cost.innerText = item.gia
-          } else {
-            console.log(item)
-            itemProduct(item)
-          }
-        })
-      } else {
-        console.log(item)
-        itemProduct(item)
-      }
-    });
+    await itemExistingCart(response)
   } catch (error) {
 
   }
 })
-
-
-
-// $('.cart-item-img').on('click', () => {
-//   let productId = $(this).data('id');
-//   axios.post('/remove-product', { id: productId })
-//     .then((response) => {
-//       console.log(response);
-//       $(this).closest('.header-cart-item').remove();
-//     })
-//     .catch((error) => {
-//       console.log(error)
-//     })
-//   console.log("Click")
-// })
 
 // function add node item cart
 const itemProduct = (item) => {
@@ -101,22 +65,34 @@ const itemProduct = (item) => {
   cartItemList.appendChild(cartItem);
 }
 
-// show cart
-// $('.zmdi-shopping-cart').on('click', () => {
-//   axios.get('/show-cart')
-//     .then((response) => {
-//       console.log(response);
-//       if (Array.isArray(response.data)) {
-//         response.data.forEach((item) => {
-//           itemProduct(item)
-//         })
-//       } else {
-//         console.log("Not data")
-//       }
+const itemExistingCart = async (response) => {
+  await $('.header-cart-wrapitem .cart-view-info').remove();
+  response.data.forEach(item => {
+    let totalquantity = 0;
+    totalquantity += item.soluong
+    console.log(totalquantity)
+    $(".quantity-product").attr('data-notify', totalquantity)
+    console.log(item)
+    const cartItems = document.querySelectorAll(`.header-cart-item[data-product-id="${item.Magiay}"][data-product-color="${item.mausac}"][data-product-size="${item.size}"]`)
+    console.log(cartItems)
+    if (cartItems.length !== 0) {
+      cartItems.forEach(cartItem => {
+        const color = cartItem.getAttribute('data-product-color');
+        const size = cartItem.getAttribute('data-product-size')
+        if (item.mausac === color && item.size === size) {
+          const content = cartItem.querySelector('.header-cart-item-name');
+          content.innerText = item.sanpham + "-" + " " + "size:" + " " + item.size + "-" + " " + "color:" + item.mausac + "-" + " " + "Quantity:" + " " + item.soluong;
+          const cost = cartItem.querySelector('.header-cart-item-info');
+          cost.innerText = item.gia
+        } else {
+          console.log(item)
+          itemProduct(item)
+        }
+      })
+    } else {
+      console.log(item)
+      itemProduct(item)
+    }
+  });
+}
 
-//     })
-//     .catch((error) => {
-//       console.log(error)
-//     })
-
-// })

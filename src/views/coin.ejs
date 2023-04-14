@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🪙COZA Xu</title>
+  <link rel="stylesheet" href="/css/coin-shoppe.css" />
+  <!-- <link rel="icon" type="image/png" href="images/icons/favicon.png" /> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.7.1/svg.min.js"></script> -->
+
+
+
+</head>
+
+<body>
+
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </head>
+
+  <script>
+    const userLoggedIn = ('<%=userLoggedIn %>').replace(/&#34;/g, '"')
+    const user = JSON.parse(userLoggedIn);
+    // console.log(userLoggedIn)
+    // console.log(user[0].id)
+  </script>
+  <%-include('header')-%>
+
+    <div class="shopee_coin_Day">
+      <main class="main-coin">
+        <section class="voucher-coin">
+          <div class="vouccher-coin-week">
+            <div style="display: contents;">
+              <section class="daily-check-coin">
+                <div class="daily-check-coin-header">Ưu đãi COZA STORE</div>
+                <a class="total-coin" href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18.75 10C18.75 14.8325 14.8325 18.75 10 18.75C5.16751 18.75 1.25 14.8325 1.25 10C1.25 5.16751 5.16751 1.25 10 1.25C14.8325 1.25 18.75 5.16751 18.75 10Z"
+                      fill="url(#paint0_linear)" stroke="url(#paint1_linear)" stroke-width="0.5"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.50361 10.25C1.63586 5.67121 5.3892 2 10 2C14.6108 2 18.3641 5.67121 18.4964 10.25C18.4988 10.167 18.5 10.0836 18.5 10C18.5 5.30558 14.6944 1.5 10 1.5C5.30558 1.5 1.5 5.30558 1.5 10C1.5 10.0836 1.50121 10.167 1.50361 10.25Z"
+                      fill="#FFF5C9"></path>
+                    <g filter="url(#filter0_i)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10 16.5C13.5899 16.5 16.5 13.5899 16.5 10C16.5 6.41015 13.5899 3.5 10 3.5C6.41015 3.5 3.5 6.41015 3.5 10C3.5 13.5899 6.41015 16.5 10 16.5Z"
+                        fill="url(#paint2_linear)"></path>
+                    </g>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16.4994 9.99934C16.4994 13.5892 13.5893 16.4993 9.99943 16.4993C8.33172 16.4993 6.8107 15.8713 5.66 14.8388C6.85002 16.165 8.57729 16.9993 10.4994 16.9993C14.0893 16.9993 16.9994 14.0892 16.9994 10.4993C16.9994 8.57721 16.1651 6.84993 14.8389 5.65991C15.8714 6.81061 16.4994 8.33163 16.4994 9.99934Z"
+                      fill="#FFEEAD"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.66057 14.8394C4.62807 13.6887 4 12.1677 4 10.5C4 6.91015 6.91015 4 10.5 4C12.1677 4 13.6887 4.62807 14.8394 5.66057C13.6494 4.33432 11.9221 3.5 10 3.5C6.41015 3.5 3.5 6.41015 3.5 10C3.5 11.9221 4.33432 13.6494 5.66057 14.8394Z"
+                      fill="#C97201"></path>
+                    <g filter="url(#filter1_d)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2621 6.15507C11.1206 5.38139 9.2543 5.18904 8.16796 6.15033C7.5815 6.66933 7.31097 7.61477 7.52372 8.368C7.70808 9.02079 8.25364 9.50032 8.82993 9.8157C9.14713 9.98929 9.49091 10.1353 9.83992 10.2323C9.9258 10.2562 10.0119 10.2781 10.097 10.3047C10.182 10.3313 10.2662 10.3599 10.3497 10.3905C10.4024 10.4097 10.4543 10.4306 10.5066 10.4505C10.5209 10.456 10.5986 10.4882 10.5402 10.4637C10.4802 10.4386 10.6018 10.4911 10.6151 10.4971C10.8609 10.6084 11.0968 10.7391 11.3186 10.8928C11.4169 10.9608 11.3581 10.9148 11.449 10.9931C11.4981 11.0354 11.5464 11.0785 11.5927 11.124C11.6389 11.1694 11.6831 11.2166 11.7258 11.2653C11.7996 11.3495 11.7649 11.3035 11.8232 11.3971C11.9772 11.6446 12.0333 11.8273 12.0245 12.1166C12.0155 12.4118 11.9045 12.7099 11.7462 12.8969C11.3417 13.3742 10.6886 13.5534 10.0857 13.5234C9.65823 13.5021 9.19094 13.4086 8.80958 13.247C8.42338 13.0835 8.07822 12.8317 7.74304 12.5838C7.52846 12.4251 7.19175 12.5483 7.06734 12.761C6.92042 13.0123 7.02942 13.2776 7.24454 13.4367C7.89081 13.9147 8.56566 14.2878 9.36809 14.4244C10.1282 14.5537 10.8541 14.5359 11.5685 14.2227C12.2381 13.9292 12.7836 13.3529 12.9473 12.6283C13.1179 11.8737 12.9275 11.1483 12.4242 10.5669C11.838 9.88944 10.946 9.51465 10.1015 9.27962C9.99958 9.25122 9.89918 9.21715 9.80001 9.1803C9.74475 9.15981 9.68993 9.13823 9.63551 9.11571C9.73961 9.15882 9.59694 9.09738 9.568 9.08385C9.44419 9.02607 9.32285 8.96271 9.20556 8.89263C8.69634 8.58846 8.38664 8.24296 8.45761 7.66114C8.54719 6.92643 9.10703 6.56172 9.79191 6.50868C10.4856 6.45489 11.2064 6.63031 11.7636 7.00792C12.2911 7.36552 12.7859 6.51011 12.2621 6.15507Z"
+                        fill="url(#paint3_linear)"></path>
+                    </g>
+                    <defs>
+                      <filter id="filter0_i" x="3.5" y="3.5" width="13" height="13" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"></feColorMatrix>
+                        <feOffset></feOffset>
+                        <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.796078 0 0 0 0 0.447059 0 0 0 0 0 0 0 0 1 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
+                      </filter>
+                      <filter id="filter1_d" x="7" y="5.5" width="6.50843" height="9.9" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                        <feColorMatrix in="SourceAlpha" type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                        </feColorMatrix>
+                        <feOffset dx="0.5" dy="0.9"></feOffset>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.818585 0 0 0 0 0.491151 0 0 0 0 0 0 0 0 1 0">
+                        </feColorMatrix>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+                      </filter>
+                      <linearGradient id="paint0_linear" x1="-2.17871" y1="9.99902" x2="10.4272" y2="22.1138"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F6C430"></stop>
+                        <stop offset="0.500917" stop-color="#FFECAA"></stop>
+                        <stop offset="1" stop-color="#F6B813"></stop>
+                      </linearGradient>
+                      <linearGradient id="paint1_linear" x1="1.28304" y1="1" x2="1.28304" y2="18.4339"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E49B00"></stop>
+                        <stop offset="1" stop-color="#D57900"></stop>
+                      </linearGradient>
+                      <linearGradient id="paint2_linear" x1="19.025" y1="10.3249" x2="10.3423" y2="1.30808"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F99D00"></stop>
+                        <stop offset="0.163166" stop-color="#EEA10B"></stop>
+                        <stop offset="0.507215" stop-color="#FCD21F"></stop>
+                        <stop offset="0.769036" stop-color="#F2BA10"></stop>
+                        <stop offset="1" stop-color="#E9A603"></stop>
+                      </linearGradient>
+                      <linearGradient id="paint3_linear" x1="5.08217" y1="10.5802" x2="12.3362" y2="14.7688"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFEC88"></stop>
+                        <stop offset="0.518415" stop-color="#FDF4CB"></stop>
+                        <stop offset="1" stop-color="#FAE17A"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <% if(typeof totalCoin!=='undefined' ){%>
+                    <p>
+                      <%=totalCoin %>
+                    </p>
+                    <%}else{%>
+                      <p>0</p>
+                      <%} %>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.9107 10L7.62204 5.71129C7.45932 5.54858 7.45932 5.28476 7.62204 5.12204C7.78476 4.95932 8.04858 4.95932 8.21129 5.12204L12.7946 9.70537C12.9573 9.86809 12.9573 10.1319 12.7946 10.2946L8.21129 14.878C8.04858 15.0407 7.78476 15.0407 7.62204 14.878C7.45932 14.7152 7.45932 14.4514 7.62204 14.2887L11.9107 10Z"
+                            fill="black" fill-opacity="0.86"></path>
+                          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="7" y="5" width="6"
+                            height="10">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M11.9107 10L7.62204 5.71129C7.45932 5.54858 7.45932 5.28476 7.62204 5.12204C7.78476 4.95932 8.04858 4.95932 8.21129 5.12204L12.7946 9.70537C12.9573 9.86809 12.9573 10.1319 12.7946 10.2946L8.21129 14.878C8.04858 15.0407 7.78476 15.0407 7.62204 14.878C7.45932 14.7152 7.45932 14.4514 7.62204 14.2887L11.9107 10Z"
+                              fill="white"></path>
+                          </mask>
+                          <g mask="url(#mask0)"></g>
+                        </svg>
+                </a>
+                <div class="daily-coin">
+                  <ul class="daily-checkin-coin">
+                    <div
+                      class="pcmall-dailycheckin_3-B7Fy pcmall-dailycheckin_2OrBuO pcmall-dailycheckin_3FgzmB pcmall-dailycheckin_3Pi2eN">
+                      <div class="pcmall-dailycheckin_1MsvK5">
+                        <span class="pcmall-dailycheckin_kSb8S6">+100</span>
+                        <img class="pcmall-dailycheckin_RYmq9h"
+                          src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/dailycheckin/efa54441c1dd47a845e8c3572f1b65bf.png">
+                      </div>
+                      <span class="pcmall-dailycheckin_2Mb-Qs" data-day="1">Hôm nay</span>
+                    </div>
+                    <div class="pcmall-dailycheckin_3-B7Fy pcmall-dailycheckin_2OrBuO">
+                      <div class="pcmall-dailycheckin_1MsvK5"><span class="pcmall-dailycheckin_kSb8S6">+100</span><img
+                          class="pcmall-dailycheckin_RYmq9h"
+                          src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/dailycheckin/efa54441c1dd47a845e8c3572f1b65bf.png">
+                      </div><span class="pcmall-dailycheckin_2Mb-Qs" data-day="2">Ngày 2</span>
+                    </div>
+                    <div class="pcmall-dailycheckin_3-B7Fy pcmall-dailycheckin_2OrBuO">
+                      <div class="pcmall-dailycheckin_1MsvK5"><span class="pcmall-dailycheckin_kSb8S6">+100</span><img
+                          class="pcmall-dailycheckin_RYmq9h"
+                          src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/dailycheckin/efa54441c1dd47a845e8c3572f1b65bf.png">
+                      </div><span class="pcmall-dailycheckin_2Mb-Qs" data-day="3">Ngày 3</span>
+                    </div>
+                    <div class="pcmall-dailycheckin_3-B7Fy pcmall-dailycheckin_2OrBuO">
+                      <div class="pcmall-dailycheckin_1MsvK5"><span class="pcmall-dailycheckin_kSb8S6">+100</span><img
+                          class="pcmall-dailycheckin_RYmq9h"
+                          src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/dailycheckin/efa54441c1dd47a845e8c3572f1b65bf.png">
+                      </div><span class="pcmall-dailycheckin_2Mb-Qs" data-day="4">Ngày 4</span>
+                    </div>
+                    <div class="pcmall-dailycheckin_3-B7Fy pcmall-dailycheckin_2OrBuO">
+                      <div class="pcmall-dailycheckin_1MsvK5"><span class="pcmall-dailycheckin_kSb8S6">+100</span><img
+                          class="pcmall-dailycheckin_RYmq9h"
+                          src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/dailycheckin/efa54441c1dd47a845e8c3572f1b65bf.png">
+                      </div><span class="pcmall-dailycheckin_2Mb-Qs" data-day="5">Ngày 5</span>
+                    </div>
+                    <div class="pcmall-dailycheckin_3-B7Fy pcmall-dailycheckin_2OrBuO">
+                      <div class="pcmall-dailycheckin_1MsvK5"><span class="pcmall-dailycheckin_kSb8S6">+100</span><img
+                          class="pcmall-dailycheckin_RYmq9h"
+                          src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/dailycheckin/efa54441c1dd47a845e8c3572f1b65bf.png">
+                      </div><span class="pcmall-dailycheckin_2Mb-Qs" data-day="6">Ngày 6</span>
+                    </div>
+                    <div class="pcmall-dailycheckin_3-B7Fy pcmall-dailycheckin_2OrBuO pcmall-dailycheckin_3B9slt">
+                      <div class="pcmall-dailycheckin_1MsvK5"><span class="pcmall-dailycheckin_kSb8S6">+200</span><img
+                          class="pcmall-dailycheckin_RYmq9h"
+                          src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/dailycheckin/21d610e35fb9657fb0bfb43dcfa185af.png">
+                      </div><span class="pcmall-dailycheckin_2Mb-Qs" data-day="0">Ngày 7</span>
+                    </div>
+                  </ul>
+                  <button data-inactive="true" data-smallsize="false" class="pcmall-dailycheckin_3uUmyu">Nhấn ngay để
+                    nhận
+                    xu nào!!!!</button>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="_3GhXrU">
+            <div class="_2tf9v6 _2STfT_">
+              <ul class="_1lMNQH nLfl8V" style="">
+                <li class="_7ZGZ_j" style=""><span><img class="_1y5_Of"
+                      src="https://cf.shopee.vn/file/https://cf.shopee.vn/file/sg-11134004-23010-2wngegsqh0lv8b"></span>
+                </li>
+
+              </ul>
+              <ol class="_1tndhi _3lpUn6">
+                <li class="_3R0J-P _3lpUn6"></li>
+                <li class="_3R0J-P _3lpUn6 _1PEPpn"></li>
+                <li class="_3R0J-P _3lpUn6"></li>
+                <li class="_3R0J-P _3lpUn6"></li>
+                <li class="_3R0J-P _3lpUn6"></li>
+              </ol>
+              <div class="_3dC-xQ"><button class="GxVS8- XT0dkQ"><img
+                    src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/coinsrewardpage/f38946a8c90de2334a1bea9aa1bcae27.png"
+                    class="_1cQSdp _1YT9zz"></button><button class="GxVS8- _2YYvzG"><img
+                    src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/coinsrewardpage/f38946a8c90de2334a1bea9aa1bcae27.png"
+                    class="_1cQSdp"></button></div>
+            </div>
+            <div class="_1gISyL">
+
+              <div class="_2ouqFX">
+                <ul class="hMrA1d" style="">
+                  <li class="ycq4W1" style="flex-basis: 151.6px;"><a><img
+                        src="https://cf.shopee.vn/file/https://cf.shopee.vn/file/15f4696b1cb937bc6e53dc456ef33a34"
+                        class="oKw_VV">
+                      <p class="_3L-J2x" style="max-width: 137.6px;">X2 TỐC ĐỘ LÀM ĐẦY</p>
+                    </a></li>
+                  <li class="ycq4W1" style="flex-basis: 151.6px;"><a><img
+                        src="https://cf.shopee.vn/file/https://cf.shopee.vn/file/338c30bbff8c2a47084b1a3a02f8c4b6"
+                        class="oKw_VV">
+                      <p class="_3L-J2x" style="max-width: 137.6px;">MỞ QUÀ TRÚNG 5.000 XU</p>
+                    </a></li>
+                  <li class="ycq4W1" style="flex-basis: 151.6px;"><a><img
+                        src="https://cf.shopee.vn/file/https://cf.shopee.vn/file/7089b21d0064346e3655ec909a4ede64"
+                        class="oKw_VV">
+                      <p class="_3L-J2x" style="max-width: 137.6px;">NHẬN NHANH 4,000 XU</p>
+                    </a></li>
+                  <li class="ycq4W1" style="flex-basis: 151.6px;"><a><img
+                        src="https://cf.shopee.vn/file/https://cf.shopee.vn/file/2571d0a454fa43cc08e153a7651a8f2d"
+                        class="oKw_VV">
+                      <p class="_3L-J2x" style="max-width: 137.6px;">20.000 XU MỖI NGÀY</p>
+                    </a></li>
+                </ul>
+              </div>
+              <button class="zB6LOQ _2xTh8U"><svg enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
+                  class="shopee-svg-icon _1WsN2Y icon-arrow-left">
+                  <g>
+                    <path
+                      d="m8.5 11c-.1 0-.2 0-.3-.1l-6-5c-.1-.1-.2-.3-.2-.4s.1-.3.2-.4l6-5c .2-.2.5-.1.7.1s.1.5-.1.7l-5.5 4.6 5.5 4.6c.2.2.2.5.1.7-.1.1-.3.2-.4.2z">
+                    </path>
+                  </g>
+                </svg></button>
+            </div>
+          </div>
+        </section>
+        <section class="_3w48xA _3pKPw8">
+          <h1 class="bu41Da">Phiên chợ Voucher</h1>
+          <ul class="_2Mqm1z">
+            <li class="_3_qWD3 _3hCXPr" style="width: 14.2857%;"><button class="W2USDv">TẤT CẢ</button></li>
+            <li class="_3_qWD3" style="width: 14.2857%;"><button class="W2USDv">LÀM ĐẸP</button></li>
+            <li class="_3_qWD3" style="width: 14.2857%;"><button class="W2USDv">DU LỊCH</button></li>
+            <li class="_3_qWD3" style="width: 14.2857%;"><button class="W2USDv">ẨM THỰC</button></li>
+            <li class="_3_qWD3" style="width: 14.2857%;"><button class="W2USDv">KHÓA HỌC</button></li>
+            <li class="_3_qWD3" style="width: 14.2857%;"><button class="W2USDv">KHÁC</button></li>
+          </ul>
+          <ul class="_3MVlNU">
+
+
+            <% if(typeof result_voucher!=='undefined' ) { %>
+              <%result_voucher[0].forEach((item)=>{%>
+                <li class="VCcvjs" data-code="<%=item.code%>">
+                  <section class="_1zBb26 _2oV6aS"><a>
+                      <img class="wRxVN5" src="<%=item.img%>" /></a>
+                    <div class="_3M8HVR">
+                      <header class="PLTz6Y"><span class="oPwQ02">Đối tác</span>ÁP DỤNG HÓA ĐƠN TỪ
+                        <%=item.condition_price_product%> ₫
+                      </header>
+                      <div class="_3OfrUU">
+                        <div><span class="_3hOqVH"><span class="_3owEH9">
+                              <%= (item.usage_count)/(item.max_usage)*100 %>% Đã đổi
+                            </span></span>
+                          <div class="_22tGDL">
+                            <div class="I62ekv" style="width:<%=(item.usage_count)/(item.max_usage)*100%>%" ;></div>
+                          </div>
+                        </div>
+                        <div class="_1agX1z">
+                          <div class="_2iXy5K"><span class="_2aD1g1">1.500</span>
+                            <div class="_2rHo56"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="_1duONT">
+                                <path
+                                  d="M18.75 10C18.75 14.8325 14.8325 18.75 10 18.75C5.16751 18.75 1.25 14.8325 1.25 10C1.25 5.16751 5.16751 1.25 10 1.25C14.8325 1.25 18.75 5.16751 18.75 10Z"
+                                  fill="url(#paint0_linear)" stroke="url(#paint1_linear)" stroke-width="0.5"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M1.50361 10.25C1.63586 5.67121 5.3892 2 10 2C14.6108 2 18.3641 5.67121 18.4964 10.25C18.4988 10.167 18.5 10.0836 18.5 10C18.5 5.30558 14.6944 1.5 10 1.5C5.30558 1.5 1.5 5.30558 1.5 10C1.5 10.0836 1.50121 10.167 1.50361 10.25Z"
+                                  fill="#FFF5C9"></path>
+                                <g filter="url(#filter0_i)">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10 16.5C13.5899 16.5 16.5 13.5899 16.5 10C16.5 6.41015 13.5899 3.5 10 3.5C6.41015 3.5 3.5 6.41015 3.5 10C3.5 13.5899 6.41015 16.5 10 16.5Z"
+                                    fill="url(#paint2_linear)"></path>
+                                </g>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M16.4994 9.99934C16.4994 13.5892 13.5893 16.4993 9.99943 16.4993C8.33172 16.4993 6.8107 15.8713 5.66 14.8388C6.85002 16.165 8.57729 16.9993 10.4994 16.9993C14.0893 16.9993 16.9994 14.0892 16.9994 10.4993C16.9994 8.57721 16.1651 6.84993 14.8389 5.65991C15.8714 6.81061 16.4994 8.33163 16.4994 9.99934Z"
+                                  fill="#FFEEAD"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M5.66057 14.8394C4.62807 13.6887 4 12.1677 4 10.5C4 6.91015 6.91015 4 10.5 4C12.1677 4 13.6887 4.62807 14.8394 5.66057C13.6494 4.33432 11.9221 3.5 10 3.5C6.41015 3.5 3.5 6.41015 3.5 10C3.5 11.9221 4.33432 13.6494 5.66057 14.8394Z"
+                                  fill="#C97201"></path>
+                                <g filter="url(#filter1_d)">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.2621 6.15507C11.1206 5.38139 9.2543 5.18904 8.16796 6.15033C7.5815 6.66933 7.31097 7.61477 7.52372 8.368C7.70808 9.02079 8.25364 9.50032 8.82993 9.8157C9.14713 9.98929 9.49091 10.1353 9.83992 10.2323C9.9258 10.2562 10.0119 10.2781 10.097 10.3047C10.182 10.3313 10.2662 10.3599 10.3497 10.3905C10.4024 10.4097 10.4543 10.4306 10.5066 10.4505C10.5209 10.456 10.5986 10.4882 10.5402 10.4637C10.4802 10.4386 10.6018 10.4911 10.6151 10.4971C10.8609 10.6084 11.0968 10.7391 11.3186 10.8928C11.4169 10.9608 11.3581 10.9148 11.449 10.9931C11.4981 11.0354 11.5464 11.0785 11.5927 11.124C11.6389 11.1694 11.6831 11.2166 11.7258 11.2653C11.7996 11.3495 11.7649 11.3035 11.8232 11.3971C11.9772 11.6446 12.0333 11.8273 12.0245 12.1166C12.0155 12.4118 11.9045 12.7099 11.7462 12.8969C11.3417 13.3742 10.6886 13.5534 10.0857 13.5234C9.65823 13.5021 9.19094 13.4086 8.80958 13.247C8.42338 13.0835 8.07822 12.8317 7.74304 12.5838C7.52846 12.4251 7.19175 12.5483 7.06734 12.761C6.92042 13.0123 7.02942 13.2776 7.24454 13.4367C7.89081 13.9147 8.56566 14.2878 9.36809 14.4244C10.1282 14.5537 10.8541 14.5359 11.5685 14.2227C12.2381 13.9292 12.7836 13.3529 12.9473 12.6283C13.1179 11.8737 12.9275 11.1483 12.4242 10.5669C11.838 9.88944 10.946 9.51465 10.1015 9.27962C9.99958 9.25122 9.89918 9.21715 9.80001 9.1803C9.74475 9.15981 9.68993 9.13823 9.63551 9.11571C9.73961 9.15882 9.59694 9.09738 9.568 9.08385C9.44419 9.02607 9.32285 8.96271 9.20556 8.89263C8.69634 8.58846 8.38664 8.24296 8.45761 7.66114C8.54719 6.92643 9.10703 6.56172 9.79191 6.50868C10.4856 6.45489 11.2064 6.63031 11.7636 7.00792C12.2911 7.36552 12.7859 6.51011 12.2621 6.15507Z"
+                                    fill="url(#paint3_linear)"></path>
+                                </g>
+                                <defs>
+                                  <filter id="filter0_i" x="3.5" y="3.5" width="13" height="13"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                                    </feBlend>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset></feOffset>
+                                    <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+                                    <feColorMatrix type="matrix"
+                                      values="0 0 0 0 0.796078 0 0 0 0 0.447059 0 0 0 0 0 0 0 0 1 0"></feColorMatrix>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
+                                  </filter>
+                                  <filter id="filter1_d" x="7" y="5.5" width="6.50843" height="9.9"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                                    <feOffset dx="0.5" dy="0.9"></feOffset>
+                                    <feColorMatrix type="matrix"
+                                      values="0 0 0 0 0.818585 0 0 0 0 0.491151 0 0 0 0 0 0 0 0 1 0"></feColorMatrix>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow">
+                                    </feBlend>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape">
+                                    </feBlend>
+                                  </filter>
+                                  <linearGradient id="paint0_linear" x1="-2.17871" y1="9.99902" x2="10.4272"
+                                    y2="22.1138" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F6C430"></stop>
+                                    <stop offset="0.500917" stop-color="#FFECAA"></stop>
+                                    <stop offset="1" stop-color="#F6B813"></stop>
+                                  </linearGradient>
+                                  <linearGradient id="paint1_linear" x1="1.28304" y1="1" x2="1.28304" y2="18.4339"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E49B00"></stop>
+                                    <stop offset="1" stop-color="#D57900"></stop>
+                                  </linearGradient>
+                                  <linearGradient id="paint2_linear" x1="19.025" y1="10.3249" x2="10.3423" y2="1.30808"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F99D00"></stop>
+                                    <stop offset="0.163166" stop-color="#EEA10B"></stop>
+                                    <stop offset="0.507215" stop-color="#FCD21F"></stop>
+                                    <stop offset="0.769036" stop-color="#F2BA10"></stop>
+                                    <stop offset="1" stop-color="#E9A603"></stop>
+                                  </linearGradient>
+                                  <linearGradient id="paint3_linear" x1="5.08217" y1="10.5802" x2="12.3362" y2="14.7688"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFEC88"></stop>
+                                    <stop offset="0.518415" stop-color="#FDF4CB"></stop>
+                                    <stop offset="1" stop-color="#FAE17A"></stop>
+                                  </linearGradient>
+                                </defs>
+                              </svg><span class="_2cflk4">
+                                <%= item.voucher_coin%>
+                              </span></div>
+                          </div>
+                          <% if(typeof totalCoin!=='undefined' ){%>
+                            <% if(totalCoin>item.voucher_coin){ %>
+                              <button class="cXA8AO">ĐỔI</button>
+                              <%}else{%>
+                                <button class=" cXA8AO" disabled="true">ĐỔI</button>
+                                <%}%>
+                                  <%}%>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </li>
+                <%}); %>
+                  <%}%>
+                    <!-- <li class="VCcvjs">
+                      <section class="_1zBb26 _2oV6aS"><a><img class="wRxVN5" src="/img/balen.png"></a>
+                        <div class="_3M8HVR">
+                          <header class="PLTz6Y">ÁP DỤNG VỚI ĐƠN HÀNG 1.500K </header>
+                          <div class="_3OfrUU">
+                            <div><span class="_3hOqVH"><span class="_3owEH9">14.5% Đã đổi</span></span>
+                              <div class="_22tGDL">
+                                <div class="I62ekv" style="width: 14.5%;"></div>
+                              </div>
+                            </div>
+                            <div class="_1agX1z">
+                              <div class="_2iXy5K"><span class="_2aD1g1">10.000</span>
+                                <div class="_2rHo56"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="_1duONT">
+                                    <path
+                                      d="M18.75 10C18.75 14.8325 14.8325 18.75 10 18.75C5.16751 18.75 1.25 14.8325 1.25 10C1.25 5.16751 5.16751 1.25 10 1.25C14.8325 1.25 18.75 5.16751 18.75 10Z"
+                                      fill="url(#paint0_linear)" stroke="url(#paint1_linear)" stroke-width="0.5"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M1.50361 10.25C1.63586 5.67121 5.3892 2 10 2C14.6108 2 18.3641 5.67121 18.4964 10.25C18.4988 10.167 18.5 10.0836 18.5 10C18.5 5.30558 14.6944 1.5 10 1.5C5.30558 1.5 1.5 5.30558 1.5 10C1.5 10.0836 1.50121 10.167 1.50361 10.25Z"
+                                      fill="#FFF5C9"></path>
+                                    <g filter="url(#filter0_i)">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10 16.5C13.5899 16.5 16.5 13.5899 16.5 10C16.5 6.41015 13.5899 3.5 10 3.5C6.41015 3.5 3.5 6.41015 3.5 10C3.5 13.5899 6.41015 16.5 10 16.5Z"
+                                        fill="url(#paint2_linear)"></path>
+                                    </g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M16.4994 9.99934C16.4994 13.5892 13.5893 16.4993 9.99943 16.4993C8.33172 16.4993 6.8107 15.8713 5.66 14.8388C6.85002 16.165 8.57729 16.9993 10.4994 16.9993C14.0893 16.9993 16.9994 14.0892 16.9994 10.4993C16.9994 8.57721 16.1651 6.84993 14.8389 5.65991C15.8714 6.81061 16.4994 8.33163 16.4994 9.99934Z"
+                                      fill="#FFEEAD"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M5.66057 14.8394C4.62807 13.6887 4 12.1677 4 10.5C4 6.91015 6.91015 4 10.5 4C12.1677 4 13.6887 4.62807 14.8394 5.66057C13.6494 4.33432 11.9221 3.5 10 3.5C6.41015 3.5 3.5 6.41015 3.5 10C3.5 11.9221 4.33432 13.6494 5.66057 14.8394Z"
+                                      fill="#C97201"></path>
+                                    <g filter="url(#filter1_d)">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.2621 6.15507C11.1206 5.38139 9.2543 5.18904 8.16796 6.15033C7.5815 6.66933 7.31097 7.61477 7.52372 8.368C7.70808 9.02079 8.25364 9.50032 8.82993 9.8157C9.14713 9.98929 9.49091 10.1353 9.83992 10.2323C9.9258 10.2562 10.0119 10.2781 10.097 10.3047C10.182 10.3313 10.2662 10.3599 10.3497 10.3905C10.4024 10.4097 10.4543 10.4306 10.5066 10.4505C10.5209 10.456 10.5986 10.4882 10.5402 10.4637C10.4802 10.4386 10.6018 10.4911 10.6151 10.4971C10.8609 10.6084 11.0968 10.7391 11.3186 10.8928C11.4169 10.9608 11.3581 10.9148 11.449 10.9931C11.4981 11.0354 11.5464 11.0785 11.5927 11.124C11.6389 11.1694 11.6831 11.2166 11.7258 11.2653C11.7996 11.3495 11.7649 11.3035 11.8232 11.3971C11.9772 11.6446 12.0333 11.8273 12.0245 12.1166C12.0155 12.4118 11.9045 12.7099 11.7462 12.8969C11.3417 13.3742 10.6886 13.5534 10.0857 13.5234C9.65823 13.5021 9.19094 13.4086 8.80958 13.247C8.42338 13.0835 8.07822 12.8317 7.74304 12.5838C7.52846 12.4251 7.19175 12.5483 7.06734 12.761C6.92042 13.0123 7.02942 13.2776 7.24454 13.4367C7.89081 13.9147 8.56566 14.2878 9.36809 14.4244C10.1282 14.5537 10.8541 14.5359 11.5685 14.2227C12.2381 13.9292 12.7836 13.3529 12.9473 12.6283C13.1179 11.8737 12.9275 11.1483 12.4242 10.5669C11.838 9.88944 10.946 9.51465 10.1015 9.27962C9.99958 9.25122 9.89918 9.21715 9.80001 9.1803C9.74475 9.15981 9.68993 9.13823 9.63551 9.11571C9.73961 9.15882 9.59694 9.09738 9.568 9.08385C9.44419 9.02607 9.32285 8.96271 9.20556 8.89263C8.69634 8.58846 8.38664 8.24296 8.45761 7.66114C8.54719 6.92643 9.10703 6.56172 9.79191 6.50868C10.4856 6.45489 11.2064 6.63031 11.7636 7.00792C12.2911 7.36552 12.7859 6.51011 12.2621 6.15507Z"
+                                        fill="url(#paint3_linear)"></path>
+                                    </g>
+                                    <defs>
+                                      <filter id="filter0_i" x="3.5" y="3.5" width="13" height="13"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                          result="shape">
+                                        </feBlend>
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                        </feColorMatrix>
+                                        <feOffset></feOffset>
+                                        <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
+                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+                                        <feColorMatrix type="matrix"
+                                          values="0 0 0 0 0.796078 0 0 0 0 0.447059 0 0 0 0 0 0 0 0 1 0">
+                                        </feColorMatrix>
+                                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
+                                      </filter>
+                                      <filter id="filter1_d" x="7" y="5.5" width="6.50843" height="9.9"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                                        <feOffset dx="0.5" dy="0.9"></feOffset>
+                                        <feColorMatrix type="matrix"
+                                          values="0 0 0 0 0.818585 0 0 0 0 0.491151 0 0 0 0 0 0 0 0 1 0">
+                                        </feColorMatrix>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow">
+                                        </feBlend>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                          result="shape">
+                                        </feBlend>
+                                      </filter>
+                                      <linearGradient id="paint0_linear" x1="-2.17871" y1="9.99902" x2="10.4272"
+                                        y2="22.1138" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F6C430"></stop>
+                                        <stop offset="0.500917" stop-color="#FFECAA"></stop>
+                                        <stop offset="1" stop-color="#F6B813"></stop>
+                                      </linearGradient>
+                                      <linearGradient id="paint1_linear" x1="1.28304" y1="1" x2="1.28304" y2="18.4339"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#E49B00"></stop>
+                                        <stop offset="1" stop-color="#D57900"></stop>
+                                      </linearGradient>
+                                      <linearGradient id="paint2_linear" x1="19.025" y1="10.3249" x2="10.3423"
+                                        y2="1.30808" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F99D00"></stop>
+                                        <stop offset="0.163166" stop-color="#EEA10B"></stop>
+                                        <stop offset="0.507215" stop-color="#FCD21F"></stop>
+                                        <stop offset="0.769036" stop-color="#F2BA10"></stop>
+                                        <stop offset="1" stop-color="#E9A603"></stop>
+                                      </linearGradient>
+                                      <linearGradient id="paint3_linear" x1="5.08217" y1="10.5802" x2="12.3362"
+                                        y2="14.7688" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FFEC88"></stop>
+                                        <stop offset="0.518415" stop-color="#FDF4CB"></stop>
+                                        <stop offset="1" stop-color="#FAE17A"></stop>
+                                      </linearGradient>
+                                    </defs>
+                                  </svg><span class="_2cflk4">2.000</span></div>
+                              </div><button class="cXA8AO" disabled="">ĐỔI</button>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </li> -->
+                    <li class="VCcvjs">
+                      <section class="_1zBb26 _2oV6aS"><a><img class="wRxVN5"
+                            src="https://cf.shopee.vn/file/sg-11134004-23030-fkd0tk668kovfb"></a>
+                        <div class="_3M8HVR">
+                          <header class="PLTz6Y"><span class="oPwQ02">Đối tác</span>Ưu đãi Massage rượu gừng day ấn
+                            huyệt
+                            60p
+                            chỉ
+                            169k (Q3, QTB)</header>
+                          <div class="_3OfrUU">
+                            <div><span class="_3hOqVH"><span class="_3owEH9">59.0% Đã đổi</span></span>
+                              <div class="_22tGDL">
+                                <div class="I62ekv" style="width: 59%;"></div>
+                              </div>
+                            </div>
+                            <div class="_1agX1z">
+                              <div class="_2iXy5K"><span class="_2aD1g1">1.500</span>
+                                <div class="_2rHo56"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="_1duONT">
+                                    <path
+                                      d="M18.75 10C18.75 14.8325 14.8325 18.75 10 18.75C5.16751 18.75 1.25 14.8325 1.25 10C1.25 5.16751 5.16751 1.25 10 1.25C14.8325 1.25 18.75 5.16751 18.75 10Z"
+                                      fill="url(#paint0_linear)" stroke="url(#paint1_linear)" stroke-width="0.5"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M1.50361 10.25C1.63586 5.67121 5.3892 2 10 2C14.6108 2 18.3641 5.67121 18.4964 10.25C18.4988 10.167 18.5 10.0836 18.5 10C18.5 5.30558 14.6944 1.5 10 1.5C5.30558 1.5 1.5 5.30558 1.5 10C1.5 10.0836 1.50121 10.167 1.50361 10.25Z"
+                                      fill="#FFF5C9"></path>
+                                    <g filter="url(#filter0_i)">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10 16.5C13.5899 16.5 16.5 13.5899 16.5 10C16.5 6.41015 13.5899 3.5 10 3.5C6.41015 3.5 3.5 6.41015 3.5 10C3.5 13.5899 6.41015 16.5 10 16.5Z"
+                                        fill="url(#paint2_linear)"></path>
+                                    </g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M16.4994 9.99934C16.4994 13.5892 13.5893 16.4993 9.99943 16.4993C8.33172 16.4993 6.8107 15.8713 5.66 14.8388C6.85002 16.165 8.57729 16.9993 10.4994 16.9993C14.0893 16.9993 16.9994 14.0892 16.9994 10.4993C16.9994 8.57721 16.1651 6.84993 14.8389 5.65991C15.8714 6.81061 16.4994 8.33163 16.4994 9.99934Z"
+                                      fill="#FFEEAD"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M5.66057 14.8394C4.62807 13.6887 4 12.1677 4 10.5C4 6.91015 6.91015 4 10.5 4C12.1677 4 13.6887 4.62807 14.8394 5.66057C13.6494 4.33432 11.9221 3.5 10 3.5C6.41015 3.5 3.5 6.41015 3.5 10C3.5 11.9221 4.33432 13.6494 5.66057 14.8394Z"
+                                      fill="#C97201"></path>
+                                    <g filter="url(#filter1_d)">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.2621 6.15507C11.1206 5.38139 9.2543 5.18904 8.16796 6.15033C7.5815 6.66933 7.31097 7.61477 7.52372 8.368C7.70808 9.02079 8.25364 9.50032 8.82993 9.8157C9.14713 9.98929 9.49091 10.1353 9.83992 10.2323C9.9258 10.2562 10.0119 10.2781 10.097 10.3047C10.182 10.3313 10.2662 10.3599 10.3497 10.3905C10.4024 10.4097 10.4543 10.4306 10.5066 10.4505C10.5209 10.456 10.5986 10.4882 10.5402 10.4637C10.4802 10.4386 10.6018 10.4911 10.6151 10.4971C10.8609 10.6084 11.0968 10.7391 11.3186 10.8928C11.4169 10.9608 11.3581 10.9148 11.449 10.9931C11.4981 11.0354 11.5464 11.0785 11.5927 11.124C11.6389 11.1694 11.6831 11.2166 11.7258 11.2653C11.7996 11.3495 11.7649 11.3035 11.8232 11.3971C11.9772 11.6446 12.0333 11.8273 12.0245 12.1166C12.0155 12.4118 11.9045 12.7099 11.7462 12.8969C11.3417 13.3742 10.6886 13.5534 10.0857 13.5234C9.65823 13.5021 9.19094 13.4086 8.80958 13.247C8.42338 13.0835 8.07822 12.8317 7.74304 12.5838C7.52846 12.4251 7.19175 12.5483 7.06734 12.761C6.92042 13.0123 7.02942 13.2776 7.24454 13.4367C7.89081 13.9147 8.56566 14.2878 9.36809 14.4244C10.1282 14.5537 10.8541 14.5359 11.5685 14.2227C12.2381 13.9292 12.7836 13.3529 12.9473 12.6283C13.1179 11.8737 12.9275 11.1483 12.4242 10.5669C11.838 9.88944 10.946 9.51465 10.1015 9.27962C9.99958 9.25122 9.89918 9.21715 9.80001 9.1803C9.74475 9.15981 9.68993 9.13823 9.63551 9.11571C9.73961 9.15882 9.59694 9.09738 9.568 9.08385C9.44419 9.02607 9.32285 8.96271 9.20556 8.89263C8.69634 8.58846 8.38664 8.24296 8.45761 7.66114C8.54719 6.92643 9.10703 6.56172 9.79191 6.50868C10.4856 6.45489 11.2064 6.63031 11.7636 7.00792C12.2911 7.36552 12.7859 6.51011 12.2621 6.15507Z"
+                                        fill="url(#paint3_linear)"></path>
+                                    </g>
+                                    <defs>
+                                      <filter id="filter0_i" x="3.5" y="3.5" width="13" height="13"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                          result="shape">
+                                        </feBlend>
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                        </feColorMatrix>
+                                        <feOffset></feOffset>
+                                        <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
+                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+                                        <feColorMatrix type="matrix"
+                                          values="0 0 0 0 0.796078 0 0 0 0 0.447059 0 0 0 0 0 0 0 0 1 0">
+                                        </feColorMatrix>
+                                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend>
+                                      </filter>
+                                      <filter id="filter1_d" x="7" y="5.5" width="6.50843" height="9.9"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                                        <feOffset dx="0.5" dy="0.9"></feOffset>
+                                        <feColorMatrix type="matrix"
+                                          values="0 0 0 0 0.818585 0 0 0 0 0.491151 0 0 0 0 0 0 0 0 1 0">
+                                        </feColorMatrix>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow">
+                                        </feBlend>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                          result="shape">
+                                        </feBlend>
+                                      </filter>
+                                      <linearGradient id="paint0_linear" x1="-2.17871" y1="9.99902" x2="10.4272"
+                                        y2="22.1138" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F6C430"></stop>
+                                        <stop offset="0.500917" stop-color="#FFECAA"></stop>
+                                        <stop offset="1" stop-color="#F6B813"></stop>
+                                      </linearGradient>
+                                      <linearGradient id="paint1_linear" x1="1.28304" y1="1" x2="1.28304" y2="18.4339"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#E49B00"></stop>
+                                        <stop offset="1" stop-color="#D57900"></stop>
+                                      </linearGradient>
+                                      <linearGradient id="paint2_linear" x1="19.025" y1="10.3249" x2="10.3423"
+                                        y2="1.30808" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F99D00"></stop>
+                                        <stop offset="0.163166" stop-color="#EEA10B"></stop>
+                                        <stop offset="0.507215" stop-color="#FCD21F"></stop>
+                                        <stop offset="0.769036" stop-color="#F2BA10"></stop>
+                                        <stop offset="1" stop-color="#E9A603"></stop>
+                                      </linearGradient>
+                                      <linearGradient id="paint3_linear" x1="5.08217" y1="10.5802" x2="12.3362"
+                                        y2="14.7688" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FFEC88"></stop>
+                                        <stop offset="0.518415" stop-color="#FDF4CB"></stop>
+                                        <stop offset="1" stop-color="#FAE17A"></stop>
+                                      </linearGradient>
+                                    </defs>
+                                  </svg><span class="_2cflk4">1.000</span></div>
+                              </div><button class="cXA8AO" disabled="">ĐỔI</button>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </li>
+
+          </ul>
+          <div class="_2layap">Loading...</div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/js/coin.js"></script>
+    <script>
+      // const showConfirmationModal = async () => {
+      //   Swal.fire({
+      //     title: 'Bạn có chắc chắn muốn đổi không?',
+      //     icon: 'warning',
+      //     showCancelButton: true,
+      //     confirmButtonColor: '#3085d6',
+      //     cancelButtonColor: '#d33',
+      //     confirmButtonText: 'Đồng ý',
+      //     cancelButtonText: 'Hủy bỏ'
+      //   }).then(async (result) => {
+      //     if (result.isConfirmed) {
+      //       await axios.post('/coin/voucher').then((result) => {
+      //         console.log(result);
+      //       })
+      //       Swal.fire(
+      //         'Đã đổi!',
+      //         'Hãy kiểm tra kho voucher của bạn.',
+      //         'success'
+      //       )
+      //     }
+      //   })
+      // }
+
+    </script>
+</body>
+
+</html>

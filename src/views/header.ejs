@@ -1,167 +1,442 @@
-<header>
-  <!-- TOP HEADER -->
-  <div id="top-header">
-    <div class="container">
-      <ul class="header-links pull-left">
-        <li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
-        <li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
-        <li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
-      </ul>
-      <ul class="header-links pull-right">
-        <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-        <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
-        <li><a href="/login"><i class="fa fa-user-o"></i> Login</a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- /TOP HEADER -->
+<!DOCTYPE html>
+<html lang="en">
 
-  <!-- MAIN HEADER -->
-  <div id="header">
-    <!-- container -->
-    <div class="container">
-      <!-- row -->
-      <div class="row">
-        <!-- LOGO -->
-        <div class="col-md-3">
-          <div class="header-logo">
-            <a href="#" class="logo">
-              <img src="./img/logo.png" alt="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.min.css"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.7.1/svg.min.js"></script>
+</head>
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header>
+    <!-- Header desktop -->
+    <div class="container-menu-desktop">
+      <!-- Topbar -->
+      <div class="top-bar">
+        <div class="content-topbar flex-sb-m h-full container">
+          <div class="left-top-bar">
+            Free shipping for standard order over $100
+          </div>
+
+          <div class="right-top-bar flex-w h-full">
+            <a href="#" class="flex-c-m trans-04 p-lr-25">
+              Help & FAQs
+            </a>
+
+            <a href="#" class="flex-c-m trans-04 p-lr-25">
+              My Account
+            </a>
+            <a href="/login" class="flex-c-m trans-04 p-lr-25">
+              Login
+            </a>
+            <a href="#" class="flex-c-m trans-04 p-lr-25">
+              EN
+            </a>
+
+            <a href="#" class="flex-c-m trans-04 p-lr-25">
+              USD
             </a>
           </div>
         </div>
-        <!-- /LOGO -->
-
-        <!-- SEARCH BAR -->
-        <div class="col-md-6">
-          <div class="header-search">
-            <form>
-              <select class="input-select">
-                <option value="0">All Categories</option>
-                <option value="1">Category 01</option>
-                <option value="1">Category 02</option>
-              </select>
-              <input class="input" placeholder="Search here">
-              <button class="search-btn">Search</button>
-            </form>
-          </div>
-        </div>
-        <!-- /SEARCH BAR -->
-
-        <!-- ACCOUNT -->
-        <div class="col-md-3 clearfix">
-          <div class="header-ctn">
-            <!-- Wishlist -->
-            <div>
-              <a href="#">
-                <i class="fa fa-heart-o"></i>
-                <span>Your Wishlist</span>
-                <div class="qty">2</div>
-              </a>
-            </div>
-            <!-- /Wishlist -->
-
-            <!-- Cart -->
-            <div class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                <i class="fa fa-shopping-cart"></i>
-                <span>Your Cart</span>
-                <div class="qty">3</div>
-              </a>
-              <div class="cart-dropdown">
-                <div class="cart-list">
-                  <div class="product-widget">
-                    <div class="product-img">
-                      <img src="./img/product01.png" alt="">
-                    </div>
-                    <div class="product-body">
-                      <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                      <h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
-                    </div>
-                    <button class="delete"><i class="fa fa-close"></i></button>
-                  </div>
-
-                  <div class="product-widget">
-                    <div class="product-img">
-                      <img src="./img/product02.png" alt="">
-                    </div>
-                    <div class="product-body">
-                      <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                      <h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-                    </div>
-                    <button class="delete"><i class="fa fa-close"></i></button>
-                  </div>
-                </div>
-                <div class="cart-summary">
-                  <small>3 Item(s) selected</small>
-                  <h5>SUBTOTAL: $2940.00</h5>
-                </div>
-                <div class="cart-btns">
-                  <a href="#">View Cart</a>
-                  <a href="#">Checkout <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div>
-            </div>
-            <!-- /Cart -->
-
-            <!-- Menu Toogle -->
-            <div class="menu-toggle">
-              <a href="#">
-                <i class="fa fa-bars"></i>
-                <span>Menu</span>
-              </a>
-            </div>
-            <!-- /Menu Toogle -->
-          </div>
-        </div>
-        <!-- /ACCOUNT -->
       </div>
-      <!-- row -->
-    </div>
-    <!-- container -->
-  </div>
-  <!-- /MAIN HEADER -->
-</header>
-<!-- /HEADER -->
 
-<!-- NAVIGATION -->
-<nav id="navigation">
-  <!-- container -->
-  <div class="container">
-    <!-- responsive-nav -->
-    <div id="responsive-nav">
-      <!-- NAV -->
-      <ul class="main-nav nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Hot Deals</a></li>
-        <li><a href="#">Nam <i class="fa fa-caret-down"></i></a>
-          <ul class="dropdown">
-            <li class="select"><a class="selected" href="#">giày thể thao nam</a>
-              <div class="caret"></div>
-            </li>
-            <!-- <li><a href="#">giày chạy bộ</a></li>
-            <li><a href="#">giày đá banh</a></li>
-            <li><a href="#">giày tây</a></li>
-            <li><a href="#">Sandal</a></li>
-            <li><a href="#">Dép</a></li> -->
-            <ul class="menu">
-              <li><a href="#">giày chạy bộ</a></li>
-              <li><a href="#">giày đá banh</a></li>
-              <li><a href="#">giày tây</a></li>
-              <li class="active"><a href="#">Sandal</a></li>
-              <li><a href="#">Dép</a></li>
+      <div class="wrap-menu-desktop">
+        <nav class="limiter-menu-desktop container">
+
+          <!-- Logo desktop -->
+          <a href="#" class="logo">
+            <img src="images/icons/logo-01.png" alt="IMG-LOGO">
+          </a>
+
+          <!-- Menu desktop -->
+          <div class="menu-desktop">
+            <ul class="main-menu">
+              <li class="active-menu">
+                <a href="index.html">Home</a>
+                <ul class="sub-menu">
+                  <li><a href="index.html">Homepage 1</a></li>
+                  <li><a href="home-02.html">Homepage 2</a></li>
+                  <li><a href="home-03.html">Homepage 3</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="product.html">Shop</a>
+              </li>
+
+              <li class="label1" data-label1="hot">
+                <a href="shoping-cart.html">Features</a>
+              </li>
+
+              <li>
+                <a href="blog.html">Blog</a>
+              </li>
+
+              <li>
+                <a href="about.html">About</a>
+              </li>
+
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="/coin">COZA Xu</a>
+              </li>
             </ul>
-          </ul>
-        </li>
-        <li><a href="#">Nữ</a></li>
-        <li><a href="#">Trẻ em</a></li>
-        <li><a href="#">Cameras</a></li>
-        <li><a href="#">Accessories</a></li>
-      </ul>
-      <!-- /NAV -->
+          </div>
+
+          <!-- Icon header -->
+          <div class="wrap-icon-header flex-w flex-r-m">
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+              <i class="zmdi zmdi-search"></i>
+            </div>
+
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11  icon-header-noti js-show-cart"
+              data-notify="0">
+              <i class=" zmdi zmdi-shopping-cart shop-show-cart"></i>
+            </div>
+            <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+              data-notify="0">
+              <i class="zmdi zmdi-favorite-outline"></i>
+            </a>
+          </div>
+        </nav>
+      </div>
     </div>
-    <!-- /responsive-nav -->
-  </div>
-  <!-- /container -->
-</nav>
-<!-- /NAVIGATION -->
+
+
+
+    <!-- Header Mobile -->
+    <div class="wrap-header-mobile">
+      <!-- Logo moblie -->
+      <div class="logo-mobile">
+        <a href="index.html"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
+      </div>
+
+      <!-- Icon header -->
+      <div class="wrap-icon-header flex-w flex-r-m m-r-15">
+        <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
+          <i class="zmdi zmdi-search"></i>
+        </div>
+
+        <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 quantity-product icon-header-noti js-show-cart"
+          data-notify="0">
+          <i class="zmdi zmdi-shopping-cart"></i>
+        </div>
+
+        <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti"
+          data-notify="0">
+          <i class="zmdi zmdi-favorite-outline"></i>
+        </a>
+      </div>
+
+      <!-- Button show menu -->
+      <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </div>
+    </div>
+
+
+    <!-- Menu Mobile -->
+    <div class="menu-mobile">
+      <ul class="topbar-mobile">
+        <li>
+          <div class="left-top-bar">
+            Free shipping for standard order over $100
+          </div>
+        </li>
+
+        <li>
+          <div class="right-top-bar flex-w h-full">
+            <a href="#" class="flex-c-m p-lr-10 trans-04">
+              Help & FAQs
+            </a>
+
+            <a href="#" class="flex-c-m p-lr-10 trans-04">
+              My Account
+            </a>
+
+            <a href="#" class="flex-c-m p-lr-10 trans-04">
+              EN
+            </a>
+
+            <a href="#" class="flex-c-m p-lr-10 trans-04">
+              USD
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="main-menu-m">
+        <li>
+          <a href="index.html">Home</a>
+          <ul class="sub-menu-m">
+            <li><a href="index.html">Homepage 1</a></li>
+            <li><a href="home-02.html">Homepage 2</a></li>
+            <li><a href="home-03.html">Homepage 3</a></li>
+          </ul>
+          <span class="arrow-main-menu-m">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </span>
+        </li>
+
+        <li>
+          <a href="product.html">Shop</a>
+        </li>
+
+        <li>
+          <a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+
+        <li>
+          <a href="about.html">About</a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal Search -->
+    <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+      <div class="container-search-header">
+        <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+          <img src="images/icons/icon-close2.png" alt="CLOSE">
+        </button>
+
+        <form class="wrap-search-header flex-w p-l-15">
+          <button class="flex-c-m trans-04">
+            <i class="zmdi zmdi-search"></i>
+          </button>
+          <input class="plh3" type="text" name="search" placeholder="Search...">
+        </form>
+      </div>
+    </div>
+  </header>
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/animsition/js/animsition.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+  <script src="js/product.client.js"></script>
+  <script>
+    $(".js-select2").each(function () {
+      $(this).select2({
+        minimumResultsForSearch: 20,
+        dropdownParent: $(this).next('.dropDownSelect2')
+      });
+    })
+  </script>
+  <!--===============================================================================================-->
+  <script src="vendor/daterangepicker/moment.min.js"></script>
+  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/slick/slick.min.js"></script>
+  <script src="js/slick-custom.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/parallax100/parallax100.js"></script>
+  <script>
+    $('.parallax100').parallax100();
+  </script>
+  <!--===============================================================================================-->
+  <script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+  <script>
+    $('.gallery-lb').each(function () { // the containers for all your galleries
+      $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled: true
+        },
+        mainClass: 'mfp-fade'
+      });
+    });
+  </script>
+  <!--===============================================================================================-->
+  <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/sweetalert/sweetalert.min.js"></script>
+  <script>
+    $('.js-addwish-b2').on('click', function (e) {
+      e.preventDefault();
+    });
+
+    $('.js-addwish-b2').each(function () {
+      var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
+      $(this).on('click', function () {
+        swal(nameProduct, "is added to wishlist !", "success");
+
+        $(this).addClass('js-addedwish-b2');
+        $(this).off('click');
+      });
+    });
+
+    $('.js-addwish-detail').each(function () {
+      var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
+
+      $(this).on('click', function () {
+        swal(nameProduct, "is added to wishlist !", "success");
+
+        $(this).addClass('js-addedwish-detail');
+        $(this).off('click');
+      });
+    });
+    $('.js-addcart-detail').each(function () {
+      var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
+      console.log("ok")
+      $(this).on('click', function () {
+        swal(nameProduct, "is added to cart !", "success");
+
+      });
+    });
+    /*---------------------------------------------*/
+
+
+  </script>
+  <!--===============================================================================================-->
+  <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    $('.js-pscroll').each(function () {
+      $(this).css('position', 'relative');
+      $(this).css('overflow', 'hidden');
+      var ps = new PerfectScrollbar(this, {
+        wheelSpeed: 1,
+        scrollingThreshold: 1000,
+        wheelPropagation: false,
+      });
+
+      $(window).on('resize', function () {
+        ps.update();
+      })
+    });
+  </script>
+  <!--===============================================================================================-->
+  <script src="js/main.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/apiProduct.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $('.quick-view-btn').click((event) => {
+      var productID = $(event.currentTarget).data('product-id');
+      console.log(productID);
+      showProductDetail(productID);
+    })
+    const showProductDetail = (productId) => {
+      $.ajax({
+        url: '/review' + productId,
+        method: 'GET',
+        success: (product) => {
+          console.log(product);
+          // Lặp qua các phần tử trong mảng product
+          $.each(product, function (index, item) {
+            // Tìm phần tử có class "item-slick3" và có số thứ tự bằng index
+            var $slickItem = $('.item-slick3').eq(index);
+            console.log($slickItem)
+            // Gán giá trị cho thuộc tính "data-thumb" của phần tử
+            $slickItem.attr('data-thumb', `img/${item.hinhanh}`);
+          });
+
+          let productModal = $('#productModal')
+
+
+          for (i = 0; i < product.length; i++) {
+            if (product[i].Other === "C") {
+              productModal.find('.js-name-detail').text(product[i].tengiay)
+              productModal.find('.product-price').text('VNĐ' + product[i].gia)
+              productModal.find('.product-image').attr('src', `img/${product[i].hinhanh}`)
+              productModal.find('.product-image-link').attr('href', `img/${product[i].hinhanh}`)
+              // slick.find(`.item-slick3-${i}`).attr('data-thumb', `img/${product[i].hinhanh}`);
+              productModal.find('.IDsanpham').attr('value', product[i].Magiay)
+            } else {
+
+              productModal.find(`.product-image-${i}`).attr('src', `img/${product[i].hinhanh}`)
+              productModal.find(`.product-image-link-${i}`).attr('href', `img/${product[i].hinhanh}`)
+              // productModal.find(`.item-slick3-${i}`).attr('data-thumb', `img/${product[i].hinhanh}`);
+            }
+          }
+
+
+
+          $('.js-show-modal1').on('click', function (e) {
+            e.preventDefault();
+            $('.js-modal1').addClass('show-modal1');
+          });
+          $('.js-hide-modal1').on('click', function () {
+            $('.js-modal1').removeClass('show-modal1');
+          });
+        }
+      })
+    }
+  </script>
+
+  <script>
+    const copyButtons = document.querySelectorAll('.right');
+    copyButtons.forEach(copyButton => {
+      copyButton.addEventListener('click', function () {
+        // Get the coupon code from the <span> element
+        const couponCode = this.previousElementSibling.querySelector('b').textContent;
+
+        // Copy the coupon code to clipboard
+        navigator.clipboard.writeText(couponCode).then(function () {
+          // Show success message
+          Swal.fire({
+            icon: 'success',
+            title: 'Coupon code copied!',
+            showConfirmButton: false,
+            timer: 1500
+          });
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

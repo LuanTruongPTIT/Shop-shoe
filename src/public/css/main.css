@@ -1001,6 +1001,14 @@ body {
   flex-grow: 1;
 }
 
+#notification {
+  padding: 10px 0 0 30px
+}
+
+#cart-view {
+  margin: 80px 0 0 70px;
+}
+
 /*---------------------------------------------*/
 .header-cart-item-img {
   width: 60px;
